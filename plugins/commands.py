@@ -55,7 +55,11 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
             InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://www.youtube.com/@TechVortexAI')
-            ],[
+            ],
+                   
+                 [  InlineKeyboardButton('💝 BACKUP ᴄʜᴀɴɴᴇʟ', url='https://t.me/+Dc6GPrg46MFkMmY5')
+            ],
+                   [
             InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/movies_request_search_group_2024'),
             InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/snap_leaks_2024')
             ],[
