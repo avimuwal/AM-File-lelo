@@ -237,7 +237,7 @@ async def start(client, message):
             )
             filetype = msg.media
             file = getattr(msg, filetype.value)
-            title = '@VJ_Botz  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
+            title = '@snap_leaks_2024  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
@@ -297,7 +297,7 @@ async def start(client, message):
             InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
         ]]
         await message.reply_text(
-            text="<b>You are not verified !\nKindly verify to continue !</b>",
+            text="<b>You are not verified !\nKindly verify to continue! \n and join this channel @snap_leaks_2024</b>",
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
         )
@@ -406,6 +406,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons = [[
             InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://www.youtube.com/@TechVortexAI')
+            ],
+                 [  InlineKeyboardButton('💝 BACKUP ᴄʜᴀɴɴᴇʟ', url='https://t.me/+Dc6GPrg46MFkMmY5')
             ],[
             InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/movies_request_search_group_2024'),
             InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/snap_leaks_2024')
