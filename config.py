@@ -7,7 +7,7 @@ import re
 import os
 from os import environ
 from Script import script
-
+ 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
     if value.lower() in ["true", "yes", "1", "enable", "y"]:
@@ -26,7 +26,8 @@ PICS = (environ.get('PICS', 'https://graph.org/file/8606dcceff7b5bbf0183a.jpg'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6143551688').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "John_snow_file_bot") # without @
 PORT = environ.get("PORT", "8080")
-
+#force sub channel information
+AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002213846386 -1001974794031 -1002170913429').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
 # Clone Info :-
 CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
 
