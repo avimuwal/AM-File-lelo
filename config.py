@@ -18,12 +18,12 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("API_ID", "18779212"))
-API_HASH = environ.get("API_HASH", "1f6b28d46b9851b73c80553f0d2f5ea5")
+API_ID = int(environ.get("API_ID", "22531203"))
+API_HASH = environ.get("API_HASH", "ca618a7d32a8b050d60276a030c6f219")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/8606dcceff7b5bbf0183a.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6143551688').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7329782020').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "John_snow_file_bot") # without @
 PORT = environ.get("PORT", "8080")
 #force sub channel information
@@ -36,7 +36,7 @@ CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
 CDB_NAME = environ.get("CDB_NAME", "clonetechvj")
 
 # Database Information
-DB_URI = environ.get("DB_URI", "mongodb+srv://konigi9999:Bmu45fANxWfIlF4v@cluster0.wxckexd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = environ.get("DB_URI", "mongodb+srv://luqozy:O2bCEdHqosocPMN2@cluster0.rxwfo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = environ.get("DB_NAME", "techvj")
 
 # Auto Delete Information
