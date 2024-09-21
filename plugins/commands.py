@@ -329,7 +329,7 @@ async def start(client, message):
             InlineKeyboardButton("How To Open Link & Verify", url=VERIFY_TUTORIAL)
         ]]
         await message.reply_text(
-            text="<b>You are not verified !\nKindly verify to continue! \n and join this channel @snap_leaks_2024</b>",
+            text="<b>Your Ads token is expired.Refresh your token and try again. Token timeout: 1 day. What is token?   This is an ads token, if you pass 1 ad, you can use the bot for 24 hours after passing the ad</b>",
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
         )
