@@ -27,7 +27,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 BOT_USERNAME = environ.get("BOT_USERNAME", "Filelelebhaibot") # without @
 PORT = environ.get("PORT", "8080")
 #force sub channel information
-AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
+AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1001993473554 -1002094750016').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
 # Clone Info :-
 CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
 
@@ -60,9 +60,9 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), Fals
 VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_API = environ.get("SHORTLINK_API", "4bbf350492296fd3215db369bbbf35e28b69eaf4") # shortlink api
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "modijiurl.com") # shortlink domain without https://
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/movies_request_search_group_2024/278") # how to open link 
+SHORTLINK_API = environ.get("SHORTLINK_API", "17057052419778d6b34843e7aaef6abaa8622f9a") # shortlink api
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "seturl.in") # shortlink domain without https://
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
 
 # Website Info:
 WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', False)) # Set True or False
