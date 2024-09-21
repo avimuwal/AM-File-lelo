@@ -24,10 +24,10 @@ BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/8606dcceff7b5bbf0183a.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7329782020').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "John_snow_file_bot") # without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "Filelelebhaibot") # without @
 PORT = environ.get("PORT", "8080")
 #force sub channel information
-AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002213846386 -1002170913429').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
+AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
 # Clone Info :-
 CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
 
