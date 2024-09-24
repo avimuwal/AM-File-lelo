@@ -60,7 +60,7 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), Fals
 VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_API = environ.get("SHORTLINK_API", "17057052419778d6b34843e7aaef6abaa8622f9a") # shortlink api
+SHORTLINK_API = environ.get("SHORTLINK_API", "dfd91d895c216de6a30c98523977705a0ab3e9f7") # shortlink api
 SHORTLINK_URL = environ.get("SHORTLINK_URL", "seturl.in") # shortlink domain without https://
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "www.google.com") # how to open link 
 
