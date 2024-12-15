@@ -23,11 +23,11 @@ API_HASH = environ.get("API_HASH", "ca618a7d32a8b050d60276a030c6f219")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://graph.org/file/8606dcceff7b5bbf0183a.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7329782020 7047424656 1032828985').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6182839487').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "Filelelebhaibot") # without @
 PORT = environ.get("PORT", "8080")
 #force sub channel information
-AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1001993473554 -1002094750016').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
+AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('AUTH_CHANNEL', '-1002101492913 -1001932923387').split()] # give channel id with seperate space. Ex : ('-10073828 -102782829 -1007282828')
 # Clone Info :-
 CLONE_MODE = bool(environ.get('CLONE_MODE', False)) # Set True or False
 
@@ -57,11 +57,12 @@ BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
 
 # Verify Info :-
-VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
+VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_API = environ.get("SHORTLINK_API", "dfd91d895c216de6a30c98523977705a0ab3e9f7") # shortlink api
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "seturl.in") # shortlink domain without https://
+SHORTLINK_API = environ.get("SHORTLINK_API", "73b9fc85ad43c6df766ea81296569e5ed792102a
+") # shortlink api
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "kingurl.in") # shortlink domain without https://
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "www.google.com") # how to open link 
 
 # Website Info:
